@@ -11,7 +11,7 @@ const Body = () => {
 
     return (
         <div>
-            <h2>Student Information</h2>
+            <h2 className='text-primary text-center'>Student Information</h2>
             {studentInfo.map((student) => (
                 <Student
                     key={student.id}
