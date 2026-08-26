@@ -14,7 +14,6 @@ function App(){
   // ];
 
 
-
   let StudInfo = [
     {id:234,name:"Ujjwal",score: 73}, 
     {id:227,name:"Tarun",score:78}, 
