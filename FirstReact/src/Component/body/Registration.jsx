@@ -10,6 +10,7 @@ const Registration = () => {
             placeholder='enter user name' />
             <input type="password" 
             placeholder='Enter passwords'/>
+            <button>Register</button>
         </form>
     </>
   )
