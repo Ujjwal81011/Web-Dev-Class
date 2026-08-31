@@ -9,6 +9,7 @@ const Plus = () => {
     <>
         <h2> Array: {arr.join(",")}</h2>
         <button onClick={increment}>Plus+2</button>
+        
     </>
   )
 }
