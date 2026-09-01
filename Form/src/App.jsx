@@ -21,8 +21,6 @@ const App = () => {
   });
 
   const [submittedData, setSubmittedData] = useState(null);
-
-  // Handle normal inputs
   const handleChange = (e) => {
     const { name, value, type, checked, files } = e.target;
 
