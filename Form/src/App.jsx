@@ -474,10 +474,6 @@ const App = () => {
 
         </form>
 
-        {/* ========================= */}
-        {/* Submitted Data */}
-        {/* ========================= */}
-
         {submittedData && (
           <div className="mt-8 border-t border-gray-300 pt-6">
 
