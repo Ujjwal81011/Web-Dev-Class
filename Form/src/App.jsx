@@ -20,7 +20,6 @@ const App = () => {
     terms: false,
   });
 
-  // Store submitted data
   const [submittedData, setSubmittedData] = useState(null);
 
   // Handle normal inputs
