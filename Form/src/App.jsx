@@ -34,8 +34,6 @@ const App = () => {
           : value,
     });
   };
-
-  // Handle skills
   const handleSkillChange = (e) => {
     const { value, checked } = e.target;
 
