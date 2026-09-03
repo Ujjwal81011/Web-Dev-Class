@@ -25,6 +25,10 @@ const Header = () => {
           <NavLink to="/counter" className="nav-link px-3">
             Counter
           </NavLink>
+
+          <NavLink to="/plus" className="nav-link px-3">
+            Plus
+          </NavLink>
         </div>
 
       </div>
