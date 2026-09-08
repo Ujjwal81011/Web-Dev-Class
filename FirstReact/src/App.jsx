@@ -13,7 +13,6 @@ const App = () => {
   return (
     <div className="container">
       <Header />
-
       <Routes>
         <Route path="/" element={<Registration />} />
         <Route path="/stud" element={<Student />} />
