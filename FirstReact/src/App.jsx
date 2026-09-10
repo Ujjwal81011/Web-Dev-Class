@@ -1,6 +1,5 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-
 import Header from './Component/header/Header'
 import Student from './Component/body/Student'
 import Registration from './Component/body/Registration'
