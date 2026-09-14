@@ -230,11 +230,9 @@ const Home = () => {
                   <h3 className="font-semibold">
                     {title}
                   </h3>
-
                   <p className="text-sm text-slate-500">
                     {text}
                   </p>
-
                   <small className="text-slate-400">
                     Recently
                   </small>
@@ -242,20 +240,15 @@ const Home = () => {
               </div>
             ))}
           </div>
-
         </section>
       </div>
-
       {/* Events + Exams */}
       <div className="mb-6 grid gap-6 lg:grid-cols-2">
-
         {/* Events */}
         <section className="rounded-xl bg-white p-5 shadow-sm">
-
           <h2 className="font-semibold text-slate-800">
             Upcoming Events
           </h2>
-
           <div className="mt-4 space-y-4">
             {events.map(([day, month, title, info]) => (
               <div
@@ -266,15 +259,12 @@ const Home = () => {
                   <b className="block text-xl text-blue-600">
                     {day}
                   </b>
-
                   <small>{month}</small>
                 </div>
-
                 <div>
                   <h3 className="font-semibold">
                     {title}
                   </h3>
-
                   <p className="text-sm text-slate-500">
                     {info}
                   </p>
@@ -282,16 +272,12 @@ const Home = () => {
               </div>
             ))}
           </div>
-
         </section>
-
         {/* Exams */}
         <section className="rounded-xl bg-white p-5 shadow-sm">
-
           <h2 className="font-semibold text-slate-800">
             Upcoming Exams
           </h2>
-
           <div className="mt-4 space-y-4">
             {exams.map(([icon, subject, cls, date]) => (
               <div
@@ -301,37 +287,29 @@ const Home = () => {
                 <span className="rounded-lg bg-slate-100 p-3 text-xl">
                   {icon}
                 </span>
-
                 <div className="flex-1">
                   <h3 className="font-semibold">
                     {subject}
                   </h3>
-
                   <p className="text-sm text-slate-500">
                     Class {cls}
                   </p>
                 </div>
-
                 <b className="text-sm text-blue-600">
                   {date}
                 </b>
               </div>
             ))}
           </div>
-
         </section>
       </div>
-
       {/* Fees + Performance */}
       <div className="mb-6 grid gap-6 lg:grid-cols-2">
-
         {/* Fees */}
         <section className="rounded-xl bg-white p-5 shadow-sm">
-
           <h2 className="font-semibold text-slate-800">
             Fee Overview
           </h2>
-
           <div className="mt-4 grid grid-cols-3 gap-3">
             {[
               ["Total", "₹15L"],
@@ -345,35 +323,27 @@ const Home = () => {
                 <small className="text-slate-500">
                   {title}
                 </small>
-
                 <p className="font-bold">
                   {value}
                 </p>
               </div>
             ))}
           </div>
-
           <div className="mt-5">
-
             <div className="mb-2 flex justify-between text-sm">
               <span>Collection Progress</span>
               <b>83.3%</b>
             </div>
-
             <div className="h-2 rounded-full bg-slate-200">
               <div className="h-2 w-[83.3%] rounded-full bg-blue-600" />
             </div>
-
           </div>
         </section>
-
         {/* Performance */}
         <section className="rounded-xl bg-white p-5 shadow-sm">
-
           <h2 className="font-semibold text-slate-800">
             Academic Performance
           </h2>
-
           <div className="mt-4 space-y-3">
             {[
               ["Class 10-A", "86%"],
@@ -385,24 +355,19 @@ const Home = () => {
                 className="flex items-center justify-between rounded-lg bg-slate-50 p-3"
               >
                 <span>{cls}</span>
-
                 <b className="text-blue-600">
                   {score}
                 </b>
               </div>
             ))}
           </div>
-
         </section>
       </div>
-
       {/* Recent Activities */}
       <section className="rounded-xl bg-white p-5 shadow-sm">
-
         <h2 className="font-semibold text-slate-800">
           Recent Activities
         </h2>
-
         <div className="mt-4 space-y-3">
           {[
             "Rahul Kumar was added as a new student.",
@@ -415,7 +380,6 @@ const Home = () => {
               className="flex gap-3 border-b pb-3 last:border-0"
             >
               <span className="text-blue-600">●</span>
-
               <p className="text-sm text-slate-600">
                 {activity}
               </p>
