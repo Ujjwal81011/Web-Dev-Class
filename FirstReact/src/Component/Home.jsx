@@ -6,53 +6,44 @@ const stats = [
   ["🏫", "Classes", "32", "Active classes"],
   ["💰", "Fees Collected", "₹12.5L", "83.3% collected"],
 ];
-
 const timetable = [
   ["08:00", "Mathematics", "10-A", "Mr. Sharma"],
   ["09:00", "Physics", "10-A", "Ms. Gupta"],
   ["10:00", "English", "10-A", "Mrs. Singh"],
   ["11:30", "Chemistry", "10-A", "Mr. Verma"],
 ];
-
 const notices = [
   ["📢", "Parent Teacher Meeting", "PTM will be held on 20 September 2026."],
   ["📝", "Half-Yearly Examination", "Examination timetable has been published."],
   ["🏫", "School Holiday", "School will remain closed on 25 September."],
 ];
-
 const events = [
   ["20", "SEP", "Parent Teacher Meeting", "09:00 AM - 01:00 PM"],
   ["25", "SEP", "Annual Sports Day", "School Ground"],
   ["02", "OCT", "Gandhi Jayanti", "School Holiday"],
 ];
-
 const exams = [
   ["📐", "Mathematics", "10-A", "22 Sep"],
   ["🔬", "Science", "10-A", "24 Sep"],
   ["📖", "English", "10-A", "26 Sep"],
 ];
-
 const Home = () => {
   return (
     <div className="min-h-screen bg-slate-100 p-4 sm:p-6">
-
       {/* Header */}
       <header className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h1 className="text-2xl font-bold text-slate-800">
             Good Morning, Admin 👋
           </h1>
-
           <p className="text-sm text-slate-500">
             Welcome back to your School ERP Dashboard
           </p>
         </div>
-
         <div className="rounded-lg bg-white px-4 py-3 text-sm shadow-sm">
           📅 Monday, 14 September 2026
         </div>
       </header>
-
       {/* Quick Actions */}
       <div className="mb-6 flex flex-wrap gap-3">
         {[
@@ -69,7 +60,6 @@ const Home = () => {
           </button>
         ))}
       </div>
-
       {/* Statistics */}
       <div className="mb-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {stats.map(([icon, title, value, sub]) => (
@@ -78,71 +68,54 @@ const Home = () => {
             className="rounded-xl bg-white p-5 shadow-sm transition hover:shadow-md"
           >
             <div className="flex items-center gap-4">
-
               <div className="rounded-xl bg-blue-50 p-3 text-2xl">
                 {icon}
               </div>
-
               <div>
                 <p className="text-sm text-slate-500">{title}</p>
-
                 <h2 className="text-2xl font-bold text-slate-800">
                   {value}
                 </h2>
-
                 <p className="text-xs text-green-600">
                   {sub}
                 </p>
               </div>
-
             </div>
           </div>
         ))}
       </div>
-
       {/* Attendance + Summary */}
       <div className="mb-6 grid gap-6 lg:grid-cols-2">
-
         {/* Attendance */}
         <section className="rounded-xl bg-white p-5 shadow-sm">
-
           <h2 className="font-semibold text-slate-800">
             Today's Attendance
           </h2>
-
           <p className="mb-5 text-sm text-slate-500">
             Student attendance overview
           </p>
-
           <div className="flex items-center justify-around">
-
             <div className="flex h-32 w-32 flex-col items-center justify-center rounded-full border-[12px] border-blue-600">
               <b className="text-xl">93.6%</b>
               <span className="text-xs text-slate-500">
                 Present
               </span>
             </div>
-
             <div className="space-y-4 text-sm">
               <p>🟢 Present <b>1,170</b></p>
               <p>🔴 Absent <b>60</b></p>
               <p>🟡 Leave <b>20</b></p>
             </div>
-
           </div>
         </section>
-
         {/* Summary */}
         <section className="rounded-xl bg-white p-5 shadow-sm">
-
           <h2 className="font-semibold text-slate-800">
             Quick Summary
           </h2>
-
           <p className="mb-4 text-sm text-slate-500">
             Today's school overview
           </p>
-
           <div className="grid gap-3 sm:grid-cols-2">
             {[
               ["👨‍🎓", "1,170 Students", "Present today"],
@@ -155,33 +128,25 @@ const Home = () => {
                 className="rounded-lg bg-slate-50 p-4"
               >
                 <span className="text-xl">{icon}</span>
-
                 <p className="mt-1 font-semibold">
                   {title}
                 </p>
-
                 <small className="text-slate-500">
                   {sub}
                 </small>
               </div>
             ))}
           </div>
-
         </section>
       </div>
-
       {/* Timetable + Notices */}
       <div className="mb-6 grid gap-6 xl:grid-cols-2">
-
         {/* Timetable */}
         <section className="overflow-x-auto rounded-xl bg-white p-5 shadow-sm">
-
           <h2 className="font-semibold text-slate-800">
             Today's Timetable
           </h2>
-
           <table className="mt-4 w-full min-w-[500px] text-left text-sm">
-
             <thead className="border-b text-slate-500">
               <tr>
                 <th className="p-3">Time</th>
@@ -190,7 +155,6 @@ const Home = () => {
                 <th className="p-3">Teacher</th>
               </tr>
             </thead>
-
             <tbody>
               {timetable.map((row) => (
                 <tr
@@ -205,17 +169,13 @@ const Home = () => {
                 </tr>
               ))}
             </tbody>
-
           </table>
         </section>
-
         {/* Notices */}
         <section className="rounded-xl bg-white p-5 shadow-sm">
-
           <h2 className="font-semibold text-slate-800">
             Latest Notices
           </h2>
-
           <div className="mt-4 space-y-4">
             {notices.map(([icon, title, text]) => (
               <div
@@ -225,7 +185,6 @@ const Home = () => {
                 <span className="rounded-lg bg-blue-50 p-3">
                   {icon}
                 </span>
-
                 <div>
                   <h3 className="font-semibold">
                     {title}
