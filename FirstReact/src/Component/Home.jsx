@@ -95,7 +95,7 @@ const Home = () => {
             Student attendance overview
           </p>
           <div className="flex items-center justify-around">
-            <div className="flex h-32 w-32 flex-col items-center justify-center rounded-full border-[12px] border-blue-600">
+            <div className="flex h-32 w-32 flex-col items-center justify-center rounded-full border-12px border-blue-600">
               <b className="text-xl">93.6%</b>
               <span className="text-xs text-slate-500">
                 Present
@@ -146,7 +146,7 @@ const Home = () => {
           <h2 className="font-semibold text-slate-800">
             Today's Timetable
           </h2>
-          <table className="mt-4 w-full min-w-[500px] text-left text-sm">
+          <table className="mt-4 w-full min-w-500px text-left text-sm">
             <thead className="border-b text-slate-500">
               <tr>
                 <th className="p-3">Time</th>
