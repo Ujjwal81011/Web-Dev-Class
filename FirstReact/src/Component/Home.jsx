@@ -56,7 +56,7 @@ const Home = () => {
     year: "numeric",
   });
   return (
-    <div className="min-h-screen [bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-950 text-white p-6">
+    <div className="min-h-screen [bg-gradient-to-br] from-slate-950 via-blue-950 to-indigo-950 text-white p-6">
       <nav className="max-w-6xl mx-auto mb-10">
         <div className="flex items-center justify-between">
           <div>
