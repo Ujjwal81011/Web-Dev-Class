@@ -56,7 +56,7 @@ const Home = () => {
     year: "numeric",
   });
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-950 text-white p-6">
+    <div className="min-h-screen [bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-950 text-white p-6">
       <nav className="max-w-6xl mx-auto mb-10">
         <div className="flex items-center justify-between">
           <div>
@@ -127,7 +127,7 @@ const Home = () => {
               Stopwatch
             </p>
             <h2 className="text-6xl md:text-7xl font-bold tracking-widest mt-6
-                           bg-gradient-to-r from-blue-400 to-purple-400
+                           [bg-gradient-to-r] from-blue-400 to-purple-400
                            bg-clip-text text-transparent">
               {formatTimer()}
             </h2>
