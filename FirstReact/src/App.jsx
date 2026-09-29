@@ -5,6 +5,7 @@ import Student from './Component/body/Student'
 import Registration from './Component/body/Registration'
 import Counter from './Component/Counter'
 import Plus from './Component/Plus'
+import Next from './Component/Next'
 import Found from './Component/Found'
 import Footer from './Component/footer/Footer'
 import Error from './Component/Error'
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/Register" element={<Registration />} />
         <Route path="/stud" element={<Student />} />
+        <Route path="/next" element={<Next />} />
         <Route path="/counter" element={<Counter />} />
         <Route path="/plus" element={<Plus />} />
         <Route path="/Found" element={<Found />} />
