@@ -1,18 +1,10 @@
 import React, { useState, useEffect } from "react";
-
 const Home = () => {
-  // Dynamic text
   const [text, setText] = useState("");
   const [displayText, setDisplayText] = useState("Welcome to Home Page");
-
-  // Live clock
   const [currentTime, setCurrentTime] = useState(new Date());
-
-  // Stopwatch
   const [seconds, setSeconds] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
-
-  // Update display text
   useEffect(() => {
     if (text.trim() === "") {
       setDisplayText("Welcome to Home Page");
@@ -20,8 +12,6 @@ const Home = () => {
       setDisplayText(text);
     }
   }, [text]);
-
-  // Live clock
   useEffect(() => {
     const clockInterval = setInterval(() => {
       setCurrentTime(new Date());
@@ -29,8 +19,6 @@ const Home = () => {
 
     return () => clearInterval(clockInterval);
   }, []);
-
-  // Stopwatch
   useEffect(() => {
     let timerInterval;
 
@@ -42,27 +30,20 @@ const Home = () => {
 
     return () => clearInterval(timerInterval);
   }, [isRunning]);
-
-  // Format stopwatch time
   const formatTimer = () => {
     const hours = Math.floor(seconds / 3600);
     const minutes = Math.floor((seconds % 3600) / 60);
     const secs = seconds % 60;
-
     return `${String(hours).padStart(2, "0")}:${String(minutes).padStart(
       2,
       "0"
     )}:${String(secs).padStart(2, "0")}`;
   };
-
-  // Current time
   const time = currentTime.toLocaleTimeString([], {
     hour: "2-digit",
     minute: "2-digit",
     second: "2-digit",
   });
-
-  // Current date
   const date = currentTime.toLocaleDateString([], {
     weekday: "long",
     day: "2-digit",
@@ -72,8 +53,6 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-950 text-white p-6">
-      
-      {/* Navbar */}
       <nav className="max-w-6xl mx-auto mb-10">
         <div className="flex items-center justify-between">
           
@@ -82,23 +61,17 @@ const Home = () => {
               My <span className="text-blue-400">Home</span>
             </h2>
           </div>
-
-          {/* Desktop Clock */}
           <div className="hidden sm:block">
-            <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl px-5 py-3 shadow-xl text-right">
-              
+            <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl px-5 py-3 shadow-xl text-right">              
               <div className="flex items-center gap-2 justify-end">
                 <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-
                 <span className="text-xs text-green-300 font-semibold tracking-wider">
                   LIVE
                 </span>
               </div>
-
               <p className="text-2xl font-bold tracking-wider">
                 {time}
               </p>
-
               <p className="text-xs text-gray-300">
                 {date}
               </p>
@@ -106,11 +79,7 @@ const Home = () => {
           </div>
         </div>
       </nav>
-
-      {/* Main Content */}
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-8">
-
-        {/* Text Section */}
         <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl p-8">
           
           <div className="mb-8">
@@ -122,8 +91,6 @@ const Home = () => {
               {displayText}
             </h1>
           </div>
-
-          {/* Input */}
           <div>
             <label
               htmlFor="message"
@@ -142,7 +109,6 @@ const Home = () => {
             />
           </div>
 
-          {/* Preview */}
           <div className="mt-6 p-5 bg-blue-500/10 border border-blue-400/20 rounded-2xl">
             <p className="text-sm text-blue-300 mb-2">
               Home Screen Preview
@@ -154,7 +120,6 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Stopwatch Section */}
         <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl p-8 flex flex-col justify-center">
           
           <div className="text-center">
