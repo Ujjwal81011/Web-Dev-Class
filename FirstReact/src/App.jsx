@@ -9,6 +9,7 @@ import Next from './Component/Next'
 import Found from './Component/Found'
 import Footer from './Component/footer/Footer'
 import Error from './Component/Error'
+import Recipies from './Component/Recipies'
 import Home from './Component/Home'
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/counter" element={<Counter />} />
         <Route path="/plus" element={<Plus />} />
         <Route path="/Found" element={<Found />} />
+        <Route path="/Recipies" element={<Recipies />} />
         <Route path="*" element = {<Error/>}/>
       </Routes>
       <Footer />
