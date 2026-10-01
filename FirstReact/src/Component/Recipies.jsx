@@ -26,8 +26,7 @@ const Recipies = () => {
         {loading ? (
           <div className="text-center py-10 text-gray-500">
             Loading Recipes...
-          </div>
-        ) : (
+          </div>) : (
           <div className="overflow-x-auto">
             <table className="w-full min-w-600px">
               <thead>
