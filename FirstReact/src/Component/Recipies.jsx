@@ -55,8 +55,7 @@ const Recipies = () => {
                 {recipes.map((row) => (
                   <tr
                     key={row.id}
-                    className="border-b border-gray-100 hover:bg-gray-50 transition"
-                  >
+                    className="border-b border-gray-100 hover:bg-gray-50 transition">
                     <td className="px-5 py-4 text-sm text-gray-500">
                       {row.id}
                     </td>
