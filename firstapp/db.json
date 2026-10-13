@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "user1",
+      "address": "kiet"
+    },
+    {
+      "id": "2",
+      "name": "user2",
+      "address": "mca"
+    },
+    {
+      "id": "3",
+      "name": "User 3",
+      "address": "ghaziabad"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
