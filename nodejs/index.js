@@ -27,6 +27,16 @@ const app = express()
 app.get("/", (req,res)=>{
     req.setEncoding("welcoe to express")
 })
+app.get("/product", (req,res)=>{
+    const pid = req.params.id;
+    req.setEncoding("Product ID"+pid)
+})
+app.post("/", (req,res)=>{
+    req.setEncoding("welcoe to express js in POST")
+})
+app.delete("/", (req,res)=>{
+    req.setEncoding("welcoe to express js in delete")
+})
 app.listen(3000,(error) => {
     if(error){
         console.log(error.message);
