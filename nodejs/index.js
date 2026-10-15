@@ -22,3 +22,14 @@
 //    console.log("Running server on:http://127.0.0.1:3000")
 // })
 
+const express = require("express")
+const app = express()
+app.get("/", (req,res)=>{
+    req.setEncoding("welcoe to express")
+})
+app.listen(3000,(error) => {
+    if(error){
+        console.log(error.message);
+    }
+    console.log("server is runnibg on 3000");
+})
