@@ -13,7 +13,6 @@
 //         res.write("<h3>This is about page</h3>")
 //         res.end("<p>In KIET MCA Section D</p>")
 //     }
-
 // };
 // const server=http.createServer(main);
 // server.listen(3000,(error)=>{
