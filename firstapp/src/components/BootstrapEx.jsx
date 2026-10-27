@@ -7,6 +7,7 @@ const BoostrapEx = () => {
   return (
     <div className='container'>
       <Header/>
+      
       <Body/>
       <Footer/>
     </div>
