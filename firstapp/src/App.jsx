@@ -3,7 +3,6 @@ import Reg from './components/Reg'
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 const LazyContact =React.lazy(()=>import("./components/Contact"));
-// import Contact from './components/Contact'
 import About from './components/About'
 import CounterP from './components/CounterP'
 import Error from './components/Error'
@@ -38,5 +37,4 @@ const App = () => {
     </div>
   )
 }
-
 export default App
