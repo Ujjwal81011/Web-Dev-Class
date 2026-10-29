@@ -1,0 +1,3 @@
+Welcome to Local File Viewer!
+
+This is a sample notes file. Search for notes.txt after choosing the public/files folder.
