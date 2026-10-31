@@ -423,8 +423,7 @@ export default function App() {
 
             <div
               aria-live="polite"
-              className="flex flex-1 flex-col overflow-hidden rounded-2xl border border-slate-800 bg-slate-950"
-            >
+              className="flex flex-1 flex-col overflow-hidden rounded-2xl border border-slate-800 bg-slate-950">
               {status === "idle" && (
                 <div className="flex flex-1 flex-col items-center justify-center px-5 py-12 text-center">
                   <FileText size={42} className="mb-4 text-slate-700" />
