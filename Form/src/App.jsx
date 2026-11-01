@@ -411,7 +411,7 @@ const App = () => {
                 step="1"
                 value={formData.experience}
                 onChange={handleChange}
-                className="w-full min-w-[400px] cursor-pointer accent-blue-500"
+                className="w-full min-w-400px cursor-pointer accent-blue-500"
               />
             </div>
 
