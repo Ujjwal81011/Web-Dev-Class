@@ -666,7 +666,6 @@ const App = () => {
               </table>
 
             </div>
-
           </div>
         )}
       </div>
