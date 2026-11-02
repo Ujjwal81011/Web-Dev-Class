@@ -151,8 +151,7 @@ const App = () => {
               className="w-full border border-gray-300 bg-white px-3 py-2 text-sm text-black outline-none focus:border-blue-500"
             />
           </div>
-
-          {/* Age */}
+          {/*Age*/}
           <div className="mb-5">
             <label className="mb-2 block text-sm font-medium text-gray-800">
               Age
@@ -174,7 +173,7 @@ const App = () => {
           {/* Date of Birth */}
           <div className="mb-5">
             <label className="mb-2 block text-sm font-medium text-gray-800">
-              Date of Birth
+              DOB
             </label>
 
             <input
