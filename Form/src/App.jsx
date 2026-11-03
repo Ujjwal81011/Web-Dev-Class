@@ -359,8 +359,7 @@ const App = () => {
               value={formData.website}
               onChange={handleChange}
               placeholder="https://example.com"
-              className="w-full border border-gray-300 bg-white px-3 py-2 text-sm text-black outline-none focus:border-blue-500"
-/>
+              className="w-full border border-gray-300 bg-white px-3 py-2 text-sm text-black outline-none focus:border-blue-500"/>
           </div>
 
           {/* Preferred Time */}
