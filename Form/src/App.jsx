@@ -392,7 +392,6 @@ const App = () => {
 
           {/* Experience */}
           <div className="mb-5">
-
             <label className="mb-2 block text-sm font-medium text-gray-800">
               Experience : {formData.experience} Years
             </label>
