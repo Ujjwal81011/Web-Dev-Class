@@ -395,7 +395,6 @@ const App = () => {
             <label className="mb-2 block text-sm font-medium text-gray-800">
               Experience : {formData.experience} Years
             </label>
-
             <div className="w-full overflow-x-auto">
               <input
                 type="range"
