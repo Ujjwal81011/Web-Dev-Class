@@ -12,8 +12,8 @@ import {
   X,
   File,
   FileImage,
-} from "lucide-react";
-
+} 
+from "lucide-react";
 const TEXT_EXTENSIONS = new Set([
   "txt",
   "md",
