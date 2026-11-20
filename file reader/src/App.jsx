@@ -42,7 +42,6 @@ const TEXT_EXTENSIONS = new Set([
   "toml",
   "svg",
 ]);
-
 function extensionOf(name = "") {
   return name.includes(".") ? name.split(".").pop().toLowerCase() : "";
 }
